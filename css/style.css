@@ -1,0 +1,68 @@
+.container {
+   width: 1000px;
+   height: 100vh;
+   overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+}
+.slide-con{
+margin: auto 0;
+}
+.slick-track{
+   display: flex;
+   flex-direction: row;
+}
+.slick-list{
+   height: 800px;
+}
+.slick-slide{
+   width: 100%;
+   height: 80%;
+}
+img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   background-position: top;
+}
+.slick-arrow {
+   position: absolute;
+   top: 45%;
+   width: 30px;
+   height: 30px;
+   background-color: lightgray;
+   color: black;
+   border-radius: 50px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 30px;
+   align-items: center;
+   align-content: center;
+   cursor: pointer;
+}
+
+.slick-next {
+   right: -5%;
+   z-index: 10;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.slick-prev {
+   left: -5%;
+   z-index: 10;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.slider-con:hover .slick-prev {
+   left: 2%;
+   opacity: 0.8;
+   transition: 0.5s;
+}
+ .slider-con:hover .slick-next {
+    right: 2%;
+    opacity: 0.8;
+    transition: 0.5s;
+ }
